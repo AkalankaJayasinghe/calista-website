@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Callista LK</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/marketplace.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/logo/logo.png" alt="Callista LK">
+                <span class="logo-text">Callista<span class="highlight">LK</span></span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="marketplace.html" class="nav-link active">Marketplace</a></li>
+                    <li><a href="customize.html" class="nav-link">Customize</a></li>
+                    <li><a href="interior.html" class="nav-link">Interior Design</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-icon user-btn" title="User account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" title="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-seedling"></i>
+                    Three Services, One Destination
+                </div>
+                <h1>Transform Your Space<br>with <span class="highlight">Callista</span></h1>
+                <p>Discover premium furniture, customize your perfect pieces, and bring your interior design dreams to life—all in one seamless experience with flexible payment options.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary">
+                        <i class="fas fa-store"></i>
+                        Browse Marketplace
+                    </button>
+                    <button class="btn-secondary">
+                        Explore Services
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Premium Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Custom Designs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../images/hero-furniture.jpg" alt="Modern Living Room">
+                <div class="hero-feature">
+                    <i class="fas fa-credit-card"></i>
+                    <div>
+                        <strong>Flexible Payments</strong>
+                        <span>Easy installments available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need in One Place</h2>
+                <p>From ready-made furniture to custom creations and complete interior design—we've got you covered.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Furniture Marketplace</h3>
+                    <p>Browse our curated collection from multiple sellers. Buy online with doorstep delivery or book a showroom visit.</p>
+                    <ul class="service-features">
+                        <li>Multi-seller platform</li>
+                        <li>Online purchase</li>
+                        <li>Showroom reservations</li>
+                        <li>Wide selection</li>
+                    </ul>
+                    <button class="service-btn">
+                        Browse Products
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Custom Furniture</h3>
+                    <p>Bring your vision to life with made-to-order furniture. Choose materials, dimensions, and style for your perfect piece.</p>
+                    <ul class="service-features">
+                        <li>Personalized design</li>
+                        <li>Material selection</li>
+                        <li>Custom dimensions</li>
+                        <li>Workshop crafted</li>
+                    </ul>
+                    <button class="service-btn">
+                        Request Custom
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Interior Design</h3>
+                    <p>Complete home and room design services. Our experts transform your space with professional consultation and execution.</p>
+                    <ul class="service-features">
+                        <li>Design consultation</li>
+                        <li>Space planning</li>
+                        <li>Full execution</li>
+                        <li>Portfolio showcase</li>
+                    </ul>
+                    <button class="service-btn">
+                        View Portfolio
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section class="marketplace-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Furniture Marketplace</h2>
+                <p>Browse our curated collection from trusted sellers. Buy online or book a showroom visit.</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="tables">Tables</button>
+                <button class="category-btn" data-category="chairs">Chairs</button>
+                <button class="category-btn" data-category="beds">Beds</button>
+                <button class="category-btn" data-category="wardrobes">Wardrobes</button>
+                <button class="category-btn" data-category="bedroom-sets">Bedroom Sets</button>
+                <button class="category-btn" data-category="pantry">Pantry</button>
+            </div>
+
+            <!-- Featured Products Grid -->
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-cards">
+                <div class="category-card">
+                    <span class="category-name">Tables</span>
+                    <span class="category-count">45</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Chairs</span>
+                    <span class="category-count">78</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Beds</span>
+                    <span class="category-count">32</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Cupboards</span>
+                    <span class="category-count">56</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Bedroom Sets</span>
+                    <span class="category-count">24</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Pantry</span>
+                    <span class="category-count">18</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-collection">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Collection</h2>
+                <button class="view-all-btn">
+                    View All
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            <div class="featured-grid" id="featured-collection">
+                <!-- Featured products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo/logo.png" alt="Callista LK">
+                    <p>Transform your space with premium furniture and expert interior design</p>
+                    <div class="social-links">
+                        <!-- <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> +94 11 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@callista-lk.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Callista LK. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/marketplace.js"></script>
+</body>
+</html>

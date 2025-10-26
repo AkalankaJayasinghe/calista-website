@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elite Interior Design Studio</title>
+    <meta name="description" content="Get in touch with our interior design team. Schedule a consultation, request a quote, or visit our studio. We're here to help bring your vision to life.">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <span>Elite Design</span>
+                    </a>
+                </div>
+                
+               <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pages/marketplace.html" class="nav-link">Marketplace</a></li>
+                    <li><a href="pages/customize.html" class="nav-link">Customize</a></li>
+                    <li><a href="pages/interior.html" class="nav-link">Interior Design</a></li>
+                    <li><a href="pages/about.html " class="nav-link">About</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+                
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-comments"></i>
+                    <span>Let's Talk Design</span>
+                </div>
+                <h1>Get In Touch With Our Design Team</h1>
+                <p>Ready to transform your space? We'd love to hear about your project and discuss how we can bring your vision to life. Reach out today for a free consultation.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                            <span>Mon-Fri 9AM-6PM EST</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Email Us</h3>
+                            <p>hello@elitedesign.com</p>
+                            <span>Response within 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Schedule Meeting</h3>
+                            <p>Book a consultation</p>
+                            <span>Virtual or in-person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-subtitle">Start Your Project</span>
+                        <h2>Tell Us About Your Vision</h2>
+                    </div>
+                    <p>Whether you're planning a complete home renovation, designing a new office space, or just need expert advice, we're here to help. Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="consultation-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Free Initial Consultation</h4>
+                                <p>60-minute session to discuss your project goals, timeline, and budget.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Custom Design Proposal</h4>
+                                <p>Detailed project proposal with timeline, scope, and investment overview.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>No Obligation</h4>
+                                <p>Our consultation is completely free with no strings attached.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="urgent-contact">
+                        <div class="urgent-info">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Need Urgent Assistance?</h4>
+                                <p>Call us directly at <a href="tel:+15551234567">(555) 123-4567</a> for immediate support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form" class="consultation-form">
+                        <h3>Project Inquiry Form</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select project type</option>
+                                <option value="residential-full">Full Home Design</option>
+                                <option value="residential-room">Single Room Design</option>
+                                <option value="commercial-office">Office Design</option>
+                                <option value="commercial-retail">Retail Space</option>
+                                <option value="commercial-restaurant">Restaurant/Hospitality</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="renovation">Renovation Project</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-25k">Under $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k-250k">$100,000 - $250,000</option>
+                                    <option value="250k-500k">$250,000 - $500,000</option>
+                                    <option value="over-500k">Over $500,000</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Preferred Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="1-3-months">1-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="6-12-months">6-12 months</option>
+                                    <option value="over-year">Over a year</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Project Location</label>
+                            <input type="text" id="location" name="location" placeholder="City, State">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectDescription">Tell us about your project *</label>
+                            <textarea id="projectDescription" name="projectDescription" rows="5" placeholder="Describe your vision, style preferences, specific needs, or any questions you have..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inspiration">How did you hear about us?</label>
+                            <select id="inspiration" name="inspiration">
+                                <option value="">Select an option</option>
+                                <option value="google">Google Search</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="referral">Friend/Family Referral</option>
+                                <option value="magazine">Magazine/Publication</option>
+                                <option value="website">Design Website/Blog</option>
+                                <option value="past-client">Past Client</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for design tips and inspiration
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send My Inquiry
+                        </button>
+                        
+                        <div class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Your information is secure and will never be shared with third parties.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations Section -->
+    <section class="locations-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Visit Us</span>
+                <h2>Our Studio Locations</h2>
+                <p>Visit our showrooms to experience our design aesthetic firsthand and meet with our team in person.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/studio-manhattan.jpg" alt="Manhattan Studio">
+                        <div class="location-badge">Main Studio</div>
+                    </div>
+                    <div class="location-info">
+                        <h3>Manhattan Design Studio</h3>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Design Street, Creative District, NY 10001</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(555) 123-4567</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Fri: 9AM-6PM | Sat: 10AM-4PM</span>
+                            </div>
+                        </div>
+                        <p>Our flagship studio featuring a full showroom, material library, and consultation spaces.</p>
+                        <div class="location-actions">
+                            <a href="#" class="btn btn-outline">Get Directions</a>
+                            <a href="#" class="btn btn-primary">Schedule Visit</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/studio-brooklyn.jpg" alt="Brooklyn Studio">
+                        <div class="location-badge">Satellite Office</div>
+                    </div>
+                    <div class="location-info">
+                        <h3>Brooklyn Showroom</h3>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>456 Industrial Ave, DUMBO, Brooklyn, NY 11201</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(555) 987-6543</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Tue-Sat: 10AM-6PM | Sun: 12PM-4PM</span>
+                            </div>
+                        </div>
+                        <p>Modern showroom space showcasing contemporary and industrial design elements.</p>
+                        <div class="location-actions">
+                            <a href="#" class="btn btn-outline">Get Directions</a>
+                            <a href="#" class="btn btn-primary">Schedule Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <!-- This would be replaced with an actual map integration -->
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interactive Map</h3>
+                        <p>Find our studio locations and get directions</p>
+                        <button class="btn btn-primary">View Full Map</button>
+                    </div>
+                </div>
+                
+                <div class="map-info">
+                    <h3>Easy to Find</h3>
+                    <p>Both of our studios are conveniently located with easy access to public transportation and ample parking.</p>
+                    
+                    <div class="transportation-info">
+                        <div class="transport-item">
+                            <i class="fas fa-subway"></i>
+                            <div>
+                                <h4>Public Transit</h4>
+                                <p>Multiple subway lines within walking distance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Parking</h4>
+                                <p>Validated parking available for consultations</p>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <i class="fas fa-wheelchair"></i>
+                            <div>
+                                <h4>Accessibility</h4>
+                                <p>Fully accessible facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are answers to some of the most common questions we receive about our design process and services.</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How much does an interior design project typically cost?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project costs vary significantly based on scope, size, and complexity. Our residential projects typically range from $25,000 to $500,000+. We provide detailed proposals after our initial consultation so you know exactly what to expect.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a typical design project take?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Timeline depends on project scope. Single room designs typically take 6-12 weeks, while full home projects can take 4-8 months. We'll provide a detailed timeline during your consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you work on projects outside of New York?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We work on projects nationwide and internationally. For projects outside the NYC area, we offer virtual design services and can coordinate with local contractors and vendors.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's included in the initial consultation?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our complimentary 60-minute consultation includes a space assessment, discussion of your goals and style preferences, timeline review, and preliminary budget discussion. You'll leave with actionable insights and next steps.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you handle the construction and installation?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We coordinate all aspects of your project, working with trusted contractors, vendors, and craftspeople. We handle project management, quality control, and timeline coordination so you don't have to.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Elite Design</span>
+                        </a>
+                        <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#residential">Residential Design</a></li>
+                        <li><a href="services.html#commercial">Commercial Design</a></li>
+                        <li><a href="services.html#consultation">Design Consultation</a></li>
+                        <li><a href="services.html#renovation">Renovation Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Design Street, Creative District, NY 10001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@elitedesign.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Elite Interior Design Studio. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
