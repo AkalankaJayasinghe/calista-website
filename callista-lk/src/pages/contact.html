@@ -3,102 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Elite Interior Design Studio</title>
+    <title>Contact Us - Callista LK</title>
     <meta name="description" content="Get in touch with our interior design team. Schedule a consultation, request a quote, or visit our studio. We're here to help bring your vision to life.">
     
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <i class="fas fa-home"></i>
-                        <span>Elite Design</span>
-                    </a>
-                </div>
-                
-               <div class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/cali.jpg" alt="Callista LK">
+                <span class="logo-text">Callista<span class="highlight">LK</span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="pages/marketplace.html" class="nav-link">Marketplace</a></li>
-                    <li><a href="pages/customize.html" class="nav-link">Customize</a></li>
-                    <li><a href="pages/interior.html" class="nav-link">Interior Design</a></li>
-                    <li><a href="pages/about.html " class="nav-link">About</a></li>
-                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                    <li><a href="customize.html" class="nav-link">Customize</a></li>
+                    <li><a href="interior.html" class="nav-link">Interior Design</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
             </div>
-                
-                <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                    <button class="nav-toggle" id="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-icon user-btn" title="User account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" title="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Contact Hero Section -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-comments"></i>
-                    <span>Let's Talk Design</span>
+<section class="contact-hero">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-comments"></i>
+                <span>Let's Talk Design</span>
+            </div>
+            <h1>Get In Touch With Our Design Team</h1>
+            <p>Ready to transform your space? We'd love to hear about your project and discuss how we can bring your vision to life. Reach out today for a free consultation.</p>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="method-info">
+                        <h3>Call Us</h3>
+                        <p>(555) 123-4567</p>
+                        <span>Mon-Fri 9AM-6PM EST</span>
+                    </div>
                 </div>
-                <h1>Get In Touch With Our Design Team</h1>
-                <p>Ready to transform your space? We'd love to hear about your project and discuss how we can bring your vision to life. Reach out today for a free consultation.</p>
-                
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="method-info">
-                            <h3>Call Us</h3>
-                            <p>(555) 123-4567</p>
-                            <span>Mon-Fri 9AM-6PM EST</span>
-                        </div>
+
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="method-info">
-                            <h3>Email Us</h3>
-                            <p>hello@elitedesign.com</p>
-                            <span>Response within 24 hours</span>
-                        </div>
+                    <div class="method-info">
+                        <h3>Email Us</h3>
+                        <p>hello@elitedesign.com</p>
+                        <span>Response within 24 hours</span>
                     </div>
-                    
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                        <div class="method-info">
-                            <h3>Schedule Meeting</h3>
-                            <p>Book a consultation</p>
-                            <span>Virtual or in-person</span>
-                        </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="method-info">
+                        <h3>Schedule Meeting</h3>
+                        <p>Book a consultation</p>
+                        <span>Virtual or in-person</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Contact Form Section -->
     <section class="contact-form-section">
@@ -346,13 +364,15 @@
         <div class="container">
             <div class="map-container">
                 <div class="map-placeholder">
-                    <!-- This would be replaced with an actual map integration -->
-                    <div class="map-content">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h3>Interactive Map</h3>
-                        <p>Find our studio locations and get directions</p>
-                        <button class="btn btn-primary">View Full Map</button>
-                    </div>
+                    <!-- Embedded map (Google Maps iframe). Uses coordinates for Manhattan as a sample location. -->
+                    <iframe
+                        class="map-iframe"
+                        src="https://maps.google.com/maps?q=40.712776,-74.005974&z=14&output=embed"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Studio Locations Map">
+                    </iframe>
                 </div>
                 
                 <div class="map-info">
@@ -453,79 +473,125 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <i class="fas fa-home"></i>
-                            <span>Elite Design</span>
-                        </a>
-                        <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section fade-in-section">
+                <div class="footer-brand">
+                   
+                    <a href="../index.html" class="brand-logo">
+                        <!-- <i class="fas fa-home"></i> -->
+                          <img src="../assets/cali.jpg" alt="Callista LK">
+                        <span>CALISTALK</span>
+                    </a>
+                    <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                    
+                    <!-- Newsletter Subscription -->
+                    <div class="newsletter-box">
+                        <h5>Subscribe to Our Newsletter</h5>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <span class="btn-text">Subscribe</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="form-message"></div>
+                        </form>
                     </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#residential">Residential Design</a></li>
-                        <li><a href="services.html#commercial">Commercial Design</a></li>
-                        <li><a href="services.html#consultation">Design Consultation</a></li>
-                        <li><a href="services.html#renovation">Renovation Services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Design Street, Creative District, NY 10001</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(555) 123-4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>hello@elitedesign.com</span>
-                        </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon" data-social="facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span class="tooltip">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="pinterest">
+                            <i class="fab fa-pinterest"></i>
+                            <span class="tooltip">Pinterest</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="tooltip">LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Elite Interior Design Studio. All rights reserved.</p>
-                    <div class="footer-links">
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="sitemap.html">Sitemap</a>
+            <div class="footer-section fade-in-section">
+                <h4>Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="marketplace.html"><i class="fas fa-angle-right"></i>Marketplace</a></li>
+                    <li><a href="customize.html"><i class="fas fa-angle-right"></i>Customize Furniture</a></li>
+                    <li><a href="interior.html"><i class="fas fa-angle-right"></i>Interior Design</a></li>
+                    <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Company</h4>
+                <ul class="footer-links-list">
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Design Street, Creative District, NY 10001</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@elitedesign.com</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Animated Background Elements -->
+    <div class="footer-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

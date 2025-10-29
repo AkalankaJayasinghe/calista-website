@@ -33,7 +33,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <!-- <img src="images/logo/logo.png" alt="Callista LK"> -->
+                <img src="assets/cali.jpg" alt="Callista LK">
                 <span class="logo-text">Callista<span class="highlight">LK</span></span>
             </div>
             
@@ -43,7 +43,7 @@
                     <li><a href="pages/marketplace.html" class="nav-link">Marketplace</a></li>
                     <li><a href="pages/customize.html" class="nav-link">Customize</a></li>
                     <li><a href="pages/interior.html" class="nav-link">Interior Design</a></li>
-                    <li><a href="pages/about.html " class="nav-link">About</a></li>
+                    <li><a href="pages/about.html" class="nav-link">About</a></li>
                     <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -71,33 +71,102 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-slider">
+            <!-- Slide 1 -->
             <div class="hero-slide active">
                 <div class="hero-bg hero-bg-1"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title" data-aos="fade-up">
-                        Transform Your <span class="gradient-text">Living Space</span>
-                    </h1>
-                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                        Discover premium furniture and expert interior design solutions
-                    </p>
-                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                        <a href="pages/marketplace.html" class="btn btn-primary">
-                            <span>Explore Collection</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="pages/customize.html" class="btn btn-outline">
-                            <span>Design Your Own</span>
-                        </a>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            Transform Your <span class="gradient-text">Living Space</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Discover premium furniture and expert interior design solutions
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="pages/marketplace.html" class="btn btn-primary">
+                                <span>Explore Collection</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="pages/customize.html" class="btn btn-outline">
+                                <span>Design Your Own</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-bg hero-bg-2"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            Elegant <span class="gradient-text">Interior Designs</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Professional interior design services for your dream home
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="pages/interior.html" class="btn btn-primary">
+                                <span>Design Services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="pages/contact.html" class="btn btn-outline">
+                                <span>Get Consultation</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-bg hero-bg-3"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            Custom <span class="gradient-text">Furniture Solutions</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Create personalized furniture that perfectly fits your style
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="pages/customize.html" class="btn btn-primary">
+                                <span>Start Customizing</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="pages/marketplace.html" class="btn btn-outline">
+                                <span>View Catalog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="hero-controls">
+            <button class="hero-control prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-control next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Slider Indicators -->
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
         </div>
         
-        <div class="hero-scroll">
+        <!-- <div class="hero-scroll">
             <div class="scroll-icon">
                 <span></span>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- Features Section -->
@@ -150,7 +219,7 @@
             <div class="categories-grid">
                 <div class="category-card" data-aos="zoom-in">
                     <div class="category-image">
-                        <img src="images/categories/living-room.jpg" alt="Living Room">
+                        <img src="assets/hero-living-room.jpg" alt="Living Room">
                         <div class="category-overlay">
                             <h3>Living Room</h3>
                             <p>256 Products</p>
@@ -163,7 +232,7 @@
                 
                 <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="category-image">
-                        <img src="images/categories/bedroom.jpg" alt="Bedroom">
+                        <img src="assets/product-bedroom.jpg" alt="Bedroom">
                         <div class="category-overlay">
                             <h3>Bedroom</h3>
                             <p>189 Products</p>
@@ -176,7 +245,7 @@
                 
                 <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="category-image">
-                        <img src="images/categories/office.jpg" alt="Office">
+                        <img src="assets/interior-design.jpg" alt="Office">
                         <div class="category-overlay">
                             <h3>Office</h3>
                             <p>143 Products</p>
@@ -205,10 +274,42 @@
             
             <div class="products-grid">
                 <!-- Product Card 1 -->
-                <div class="product-card" data-aos="fade-up">
+                <div class="product-card new trending" data-aos="fade-up">
                     <div class="product-badge">New</div>
                     <div class="product-image">
-                        <img src="images/products/product-1.jpg" alt="Modern Sofa">
+                        <img src="assets/sofa.png" alt="Modern Sofa">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <h3 class="product-title">Luxury Modern Sofa</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 85,000</span>
+                            <span class="price-original">Rs. 95,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card new" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="assets/bed.png" alt="Modern Sofa">
                         <div class="product-overlay">
                             <button class="product-action" title="Add to Wishlist">
                                 <i class="far fa-heart"></i>
@@ -237,7 +338,70 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="product-card sale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="assets/funi (1).jpeg" alt="Modern Sofa">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <h3 class="product-title">Luxury Modern Sofa</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 85,000</span>
+                            <span class="price-original">Rs. 95,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card trending" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="assets/funi (2).jpeg" alt="Modern Sofa">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <h3 class="product-title">Luxury Modern Sofa</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 85,000</span>
+                            <span class="price-original">Rs. 95,000</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- More product cards... -->
             </div>
             
@@ -259,7 +423,7 @@
             
             <div class="showcase-grid">
                 <div class="showcase-item large" data-aos="fade-up">
-                    <img src="images/portfolio/project-1.jpg" alt="Project 1">
+                    <img src="assets/mini.png" alt="Project 1">
                     <div class="showcase-content">
                         <h3>Modern Minimalist Home</h3>
                         <p>Colombo 07</p>
@@ -267,7 +431,7 @@
                 </div>
                 
                 <div class="showcase-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/portfolio/project-2.jpg" alt="Project 2">
+                    <img src="assets/villa.png" alt="Project 2">
                     <div class="showcase-content">
                         <h3>Luxury Villa</h3>
                         <p>Galle</p>
@@ -275,11 +439,15 @@
                 </div>
                 
                 <div class="showcase-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/portfolio/project-3.jpg" alt="Project 3">
+                    <img src="assets/offic.png" alt="Project 3">
                     <div class="showcase-content">
                         <h3>Office Space</h3>
                         <p>Colombo 03</p>
                     </div>
+
+                   
+                
+                </div>
                 </div>
             </div>
         </div>
@@ -301,18 +469,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="images/logo/logo.png" alt="Callista LK">
                     <p>Transform your space with premium furniture and expert interior design</p>
-                    <div class="social-links">
+                    <div class="social-links"> -->
                         <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 
@@ -348,7 +516,124 @@
                 <p>&copy; 2024 Callista LK. All rights reserved.</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section fade-in-section">
+                <div class="footer-brand">
+                   
+                    <a href="index.html" class="brand-logo">
+                        <!-- <i class="fas fa-home"></i> -->
+                          <img src="assets/cali.jpg" alt="Callista LK">
+                        <span>CALISTALK</span>
+                    </a>
+                    <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                    
+                    <!-- Newsletter Subscription -->
+                    <div class="newsletter-box">
+                        <h5>Subscribe to Our Newsletter</h5>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <span class="btn-text">Subscribe</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="form-message"></div>
+                        </form>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon" data-social="facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span class="tooltip">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="pinterest">
+                            <i class="fab fa-pinterest"></i>
+                            <span class="tooltip">Pinterest</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="tooltip">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="services.html#residential"><i class="fas fa-angle-right"></i>Residential Design</a></li>
+                    <li><a href="services.html#commercial"><i class="fas fa-angle-right"></i>Commercial Design</a></li>
+                    <li><a href="services.html#consultation"><i class="fas fa-angle-right"></i>Design Consultation</a></li>
+                    <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Company</h4>
+                <ul class="footer-links-list">
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Design Street, Creative District, NY 10001</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@elitedesign.com</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Animated Background Elements -->
+    <div class="footer-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

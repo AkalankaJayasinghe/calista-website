@@ -34,7 +34,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="../images/logo/logo.png" alt="Callista LK">
+                <img src="../assets/cali.jpg" alt="Callista LK">
                 <span class="logo-text">Callista<span class="highlight">LK</span></span>
             </div>
             
@@ -44,8 +44,8 @@
                     <li><a href="marketplace.html" class="nav-link active">Marketplace</a></li>
                     <li><a href="customize.html" class="nav-link">Customize</a></li>
                     <li><a href="interior.html" class="nav-link">Interior Design</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
             
@@ -70,239 +70,343 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-seedling"></i>
-                    Three Services, One Destination
-                </div>
-                <h1>Transform Your Space<br>with <span class="highlight">Callista</span></h1>
-                <p>Discover premium furniture, customize your perfect pieces, and bring your interior design dreams to life—all in one seamless experience with flexible payment options.</p>
-                <div class="hero-actions">
-                    <button class="btn-primary">
+    <section style="padding: 120px 0 80px; background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); min-height: 600px; overflow: hidden;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1400px; margin: 0 auto; padding: 0 24px;">
+            <div style="max-width: 600px;">
+                <h1 style="font-size: clamp(2.5rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 24px; color: #111827;">
+                    Transform Your Space<br>with <span style="color: #8b4513;">Callista</span>
+                </h1>
+                <p style="font-size: 18px; color: #6b7280; margin-bottom: 32px; line-height: 1.6;">
+                    Discover premium furniture, customize your perfect pieces, and bring your interior design dreams to life—all in one seamless experience with flexible payment options.
+                </p>
+                <div class="hero-buttons" style="display: flex; gap: 16px; margin-bottom: 48px;">
+                    <a href="#marketplace-section" class="btn btn-primary">
                         <i class="fas fa-store"></i>
-                        Browse Marketplace
-                    </button>
-                    <button class="btn-secondary">
+                        <span>Browse Marketplace</span>
+                    </a>
+                    <a href="interior.html" class="btn btn-outline">
                         Explore Services
                         <i class="fas fa-arrow-right"></i>
-                    </button>
+                    </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Premium Products</span>
+                <div style="display: flex; gap: 48px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">500+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Premium Products</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Custom Designs</span>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">100+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Custom Designs</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Happy Customers</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="../images/hero-furniture.jpg" alt="Modern Living Room">
-                <div class="hero-feature">
-                    <i class="fas fa-credit-card"></i>
-                    <div>
-                        <strong>Flexible Payments</strong>
-                        <span>Easy installments available</span>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">1000+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Happy Customers</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Everything You Need in One Place</h2>
-                <p>From ready-made furniture to custom creations and complete interior design—we've got you covered.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>Furniture Marketplace</h3>
-                    <p>Browse our curated collection from multiple sellers. Buy online with doorstep delivery or book a showroom visit.</p>
-                    <ul class="service-features">
-                        <li>Multi-seller platform</li>
-                        <li>Online purchase</li>
-                        <li>Showroom reservations</li>
-                        <li>Wide selection</li>
-                    </ul>
-                    <button class="service-btn">
-                        Browse Products
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+            
+            <div style="position: relative; max-width: 100%;">
+                <img src="../assets/hero-living-room.jpg" alt="Modern Living Room" style="width: 100%; max-width: 100%; height: 450px; object-fit: cover; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); display: block;">
+                
+                <div style="position: absolute; top: 20px; right: 20px; background: rgba(255, 255, 255, 0.95); color: #3d7c47; padding: 10px 18px; border-radius: 20px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 5; backdrop-filter: blur(10px);">
+                    <i class="fas fa-seedling" style="font-size: 16px; color: #3d7c47;"></i>
+                    Three Services, One Destination
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                <div style="position: absolute; bottom: 24px; left: 24px; background: white; padding: 16px 20px; border-radius: 12px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);">
+                    <i class="fas fa-credit-card" style="color: #3d7c47; font-size: 20px;"></i>
+                    <div style="display: flex; flex-direction: column;">
+                        <strong style="font-weight: 600; color: #111827;">Flexible Payments</strong>
+                        <span style="font-size: 14px; color: #6b7280;">Easy installments available</span>
                     </div>
-                    <h3>Custom Furniture</h3>
-                    <p>Bring your vision to life with made-to-order furniture. Choose materials, dimensions, and style for your perfect piece.</p>
-                    <ul class="service-features">
-                        <li>Personalized design</li>
-                        <li>Material selection</li>
-                        <li>Custom dimensions</li>
-                        <li>Workshop crafted</li>
-                    </ul>
-                    <button class="service-btn">
-                        Request Custom
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Interior Design</h3>
-                    <p>Complete home and room design services. Our experts transform your space with professional consultation and execution.</p>
-                    <ul class="service-features">
-                        <li>Design consultation</li>
-                        <li>Space planning</li>
-                        <li>Full execution</li>
-                        <li>Portfolio showcase</li>
-                    </ul>
-                    <button class="service-btn">
-                        View Portfolio
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Marketplace Section -->
-    <section class="marketplace-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Furniture Marketplace</h2>
-                <p>Browse our curated collection from trusted sellers. Buy online or book a showroom visit.</p>
-            </div>
+   <!-- ============================================ -->
+<!-- MARKETPLACE SECTION – FIXED -->
+<!-- ============================================ -->
+<section class="marketplace-section" id="marketplace-section">
+    <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+            <h2>Furniture Marketplace</h2>
+            <p>Browse our curated collection from trusted sellers. Buy online or book a showroom visit.</p>
+        </div>
 
-            <!-- Category Filter -->
-            <div class="category-filter">
-                <button class="category-btn active" data-category="all">All</button>
-                <button class="category-btn" data-category="tables">Tables</button>
-                <button class="category-btn" data-category="chairs">Chairs</button>
-                <button class="category-btn" data-category="beds">Beds</button>
-                <button class="category-btn" data-category="wardrobes">Wardrobes</button>
-                <button class="category-btn" data-category="bedroom-sets">Bedroom Sets</button>
-                <button class="category-btn" data-category="pantry">Pantry</button>
-            </div>
+        <!-- Category Filters -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all" aria-label="All categories">
+                <i class="fas fa-th"></i>
+                <span class="btn-text">All</span>
+            </button>
+            <button class="category-btn" data-category="tables" aria-label="Tables">
+                <i class="fas fa-table"></i>
+                <span class="btn-text">Tables</span>
+            </button>
+            <button class="category-btn" data-category="chairs" aria-label="Chairs">
+                <i class="fas fa-chair"></i>
+                <span class="btn-text">Chairs</span>
+            </button>
+            <button class="category-btn" data-category="living-room" aria-label="Living Room">
+                <i class="fas fa-couch"></i>
+                <span class="btn-text">Living Room</span>
+            </button>
+            <button class="category-btn" data-category="bedroom-sets" aria-label="Bedroom Sets">
+                <i class="fas fa-bed"></i>
+                <span class="btn-text">Bedroom Sets</span>
+            </button>
+            <button class="category-btn" data-category="custom" aria-label="Custom Furniture">
+                <i class="fas fa-tools"></i>
+                <span class="btn-text">Custom</span>
+            </button>
+        </div>
 
-            <!-- Featured Products Grid -->
-            <div class="products-grid" id="featured-products">
-                <!-- Products will be loaded here -->
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search furniture by name, category, or description...">
             </div>
         </div>
-    </section>
 
-    <!-- Shop by Category -->
-    <section class="category-section">
-        <div class="container">
-            <h2>Shop by Category</h2>
-            <div class="category-cards">
-                <div class="category-card">
+        <!-- Products Grid -->
+        <div class="products-grid" id="featured-products">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+
+        <!-- No Results Message (Hidden by default) -->
+        <div class="no-results" id="no-results" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No products found</h3>
+            <p>Try adjusting your filters or search terms</p>
+            <button class="btn-primary" onclick="resetFilters()">
+                <i class="fas fa-redo"></i> Reset Filters
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Shop by Category with Images -->
+<section class="category-section">
+    <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="category-cards">
+            <!-- Tables -->
+            <div class="category-card" data-category="tables">
+                <div class="category-image">
+                    <img src="../assets/categories/tables.jpg" alt="Tables" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Tables</span>
                     <span class="category-count">45</span>
                 </div>
-                <div class="category-card">
+            </div>
+            
+            <!-- Chairs -->
+            <div class="category-card" data-category="chairs">
+                <div class="category-image">
+                    <img src="../assets/categories/chairs.jpg" alt="Chairs" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Chairs</span>
                     <span class="category-count">78</span>
                 </div>
-                <div class="category-card">
+            </div>
+            
+            <!-- Beds -->
+            <div class="category-card" data-category="beds">
+                <div class="category-image">
+                    <img src="../assets/categories/beds.jpg" alt="Beds" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Beds</span>
                     <span class="category-count">32</span>
                 </div>
-                <div class="category-card">
+            </div>
+            
+            <!-- Cupboards -->
+            <div class="category-card" data-category="cupboards">
+                <div class="category-image">
+                    <img src="../assets/categories/cupboards.jpg" alt="Cupboards" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Cupboards</span>
                     <span class="category-count">56</span>
                 </div>
-                <div class="category-card">
+            </div>
+            
+            <!-- Bedroom Sets -->
+            <div class="category-card" data-category="bedroom-sets">
+                <div class="category-image">
+                    <img src="../assets/categories/bedroom-sets.jpg" alt="Bedroom Sets" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Bedroom Sets</span>
                     <span class="category-count">24</span>
                 </div>
-                <div class="category-card">
+            </div>
+            
+            <!-- Pantry -->
+            <div class="category-card" data-category="pantry">
+                <div class="category-image">
+                    <img src="../assets/categories/pantry.jpg" alt="Pantry" loading="lazy">
+                </div>
+                <div class="category-info">
                     <span class="category-name">Pantry</span>
                     <span class="category-count">18</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Featured Collection -->
-    <section class="featured-collection">
-        <div class="container">
-            <div class="section-header">
+    </div>
+</section>
+<!-- Featured Collection - Enhanced with Carousel -->
+<section class="featured-collection">
+    <div class="container">
+        <div class="section-header">
+            <div class="header-content">
                 <h2>Featured Collection</h2>
-                <button class="view-all-btn">
-                    View All
-                    <i class="fas fa-eye"></i>
-                </button>
+                <p>Handpicked designs to inspire your next project.</p>
             </div>
-            <div class="featured-grid" id="featured-collection">
-                <!-- Featured products will be loaded here -->
+            <div class="header-actions">
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn" id="featured-prev" aria-label="Previous featured items">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="featured-next" aria-label="Next featured items">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <a href="collection.html" class="view-all-btn">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
-    </section>
+        
+        <!-- Carousel Wrapper -->
+        <div class="carousel-wrapper">
+            <div class="featured-grid" id="featured-collection-grid">
+                <!-- Featured products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="../images/logo/logo.png" alt="Callista LK">
-                    <p>Transform your space with premium furniture and expert interior design</p>
-                    <div class="social-links">
-                        <!-- <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                <div class="footer-section fade-in-section">
+                    <div class="footer-brand">
+                        <a href="../index.html" class="brand-logo">
+                            <img src="../assets/cali.jpg" alt="Callista LK">
+                            <span>CALISTALK</span>
+                        </a>
+                        <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                        
+                        <!-- Newsletter Subscription -->
+                        <div class="newsletter-box">
+                            <h5>Subscribe to Our Newsletter</h5>
+                            <form id="newsletterForm" class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                    <button type="submit" class="subscribe-btn">
+                                        <span class="btn-text">Subscribe</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                                <div class="form-message"></div>
+                            </form>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-icon" data-social="facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span class="tooltip">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="pinterest">
+                                <i class="fab fa-pinterest"></i>
+                                <span class="tooltip">Pinterest</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                <div class="footer-section fade-in-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="marketplace.html"><i class="fas fa-angle-right"></i>Marketplace</a></li>
+                        <li><a href="customize.html"><i class="fas fa-angle-right"></i>Customize Furniture</a></li>
+                        <li><a href="interior.html"><i class="fas fa-angle-right"></i>Interior Design</a></li>
+                        <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-links">
-                    <h4>Customer Service</h4>
-                    <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Track Order</a></li>
+                <div class="footer-section fade-in-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-contact">
+                <div class="footer-section fade-in-section">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
-                    <p><i class="fas fa-phone"></i> +94 11 234 5678</p>
-                    <p><i class="fas fa-envelope"></i> info@callista-lk.com</p>
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Design Street, Creative District, NY 10001</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@elitedesign.com</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Callista LK. All rights reserved.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!-- Animated Background Elements -->
+        <div class="footer-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
         </div>
     </footer>
 

@@ -18,26 +18,26 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/interior.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/marketplace.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">
-                    <span class="logo-text">Callista<span class="highlight">LK</span></span>
-                </a>
+                <img src="../assets/cali.jpg" alt="Callista LK">
+                <span class="logo-text">Callista<span class="highlight">LK</span></span>
             </div>
-            <nav class="nav-menu">
+            <div class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="../index.html" class="nav-link">Home</a></li>
                     <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
                     <li><a href="customize.html" class="nav-link">Customize</a></li>
                     <li><a href="interior.html" class="nav-link active">Interior Design</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
             <div class="nav-actions">
                 <button class="nav-icon search-btn" title="Search">
                     <i class="fas fa-search"></i>
@@ -56,7 +56,7 @@
                 <span></span>
             </button>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="interior-hero">
@@ -613,75 +613,129 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section fade-in-section">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span class="logo-text">Callista<span class="highlight">LK</span></span>
+                   
+                                        <a href="../index.html" class="brand-logo">
+                                                <!-- <i class="fas fa-home"></i> -->
+                                                    <img src="../assets/cali.jpg" alt="Callista LK">
+                        <span>CALISTALK</span>
+                    </a>
+                    <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                    
+                    <!-- Newsletter Subscription -->
+                    <div class="newsletter-box">
+                        <h5>Subscribe to Our Newsletter</h5>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <span class="btn-text">Subscribe</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="form-message"></div>
+                        </form>
                     </div>
-                    <p>Transform your space with premium furniture and expert interior design solutions.</p>
+                    
                     <div class="social-links">
-                        <a href="#" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="marketplace.html">Marketplace</a></li>
-                        <li><a href="customize.html">Custom Furniture</a></li>
-                        <li><a href="interior.html">Interior Design</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Residential Design</a></li>
-                        <li><a href="#">Commercial Design</a></li>
-                        <li><a href="#">Space Planning</a></li>
-                        <li><a href="#">3D Visualization</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Furniture Street, Colombo, Sri Lanka</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+94 11 234 5678</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>design@callista.lk</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
-                        </div>
+                        <a href="#" class="social-icon" data-social="facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span class="tooltip">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="pinterest">
+                            <i class="fab fa-pinterest"></i>
+                            <span class="tooltip">Pinterest</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="tooltip">LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Callista LK. All rights reserved. | Design by Akalanka Jayasinghe</p>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="services.html#residential"><i class="fas fa-angle-right"></i>Residential Design</a></li>
+                    <li><a href="services.html#commercial"><i class="fas fa-angle-right"></i>Commercial Design</a></li>
+                    <li><a href="services.html#consultation"><i class="fas fa-angle-right"></i>Design Consultation</a></li>
+                    <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Company</h4>
+                <ul class="footer-links-list">
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Design Street, Creative District, NY 10001</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@elitedesign.com</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Animated Background Elements -->
+    <div class="footer-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</footer>
+
 
     <!-- Portfolio Modal -->
     <div class="portfolio-modal" id="portfolioModal">
-        <div class="modal-overlay" onclick="closePortfolioModal()"></div>
+        <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" onclick="closePortfolioModal()" title="Close modal">
+            <button class="modal-close" title="Close modal">
                 <i class="fas fa-times"></i>
             </button>
             <div class="modal-image">
@@ -697,15 +751,10 @@
             </div>
         </div>
     </div>
-
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/interior.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true
-        });
-    </script>
 </body>
 </html>

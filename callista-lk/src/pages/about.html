@@ -3,54 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Elite Interior Design Studio</title>
+    <title>About Us - Callista LK</title>
     <meta name="description" content="Learn about our passionate team of interior designers, our design philosophy, and our commitment to creating beautiful, functional spaces.">
     
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- === START: STYLES FOR HERO IMAGE === -->
+    <style>
+        .about-hero {
+            position: relative; /* Required for the overlay */
+            background-image: url('../assets/about.png'); /* CHANGE THIS to your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff; /* Sets default text color to white */
+            padding: 120px 0; /* Provides vertical spacing */
+            text-align: center;
+        }
+
+        /* Adds a dark overlay for better text readability */
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(25, 35, 50, 0.6); /* Dark semi-transparent overlay */
+            z-index: 1; /* Places overlay below the content */
+        }
+
+        /* Ensures the content appears above the overlay */
+        .about-hero .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Overrides any default dark colors for text elements */
+        .about-hero h1,
+        .about-hero p {
+            color: #ffffff;
+        }
+
+        .about-hero .hero-badge {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+        }
+
+        .about-hero .stat-item {
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for readability */
+        }
+
+        .about-hero .stat-number {
+            color: #ffffff;
+        }
+
+        .about-hero .stat-label {
+            color: rgba(255, 255, 255, 0.85);
+        }
+    </style>
+    <!-- === END: STYLES FOR HERO IMAGE === -->
+
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <i class="fas fa-home"></i>
-                        <span>Elite Design</span>
-                    </a>
-                </div>
-                
-              <div class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/cali.jpg" alt="Callista LK">
+                <span class="logo-text">Callista<span class="highlight">LK</span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="pages/marketplace.html" class="nav-link">Marketplace</a></li>
-                    <li><a href="pages/customize.html" class="nav-link">Customize</a></li>
-                    <li><a href="pages/interior.html" class="nav-link">Interior Design</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                    <li><a href="customize.html" class="nav-link">Customize</a></li>
+                    <li><a href="interior.html" class="nav-link">Interior Design</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
-                <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                    <button class="nav-toggle" id="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-icon user-btn" title="User account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" title="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- About Hero Section -->
+    <!-- About Hero Section (Now with a background image) -->
     <section class="about-hero">
         <div class="container">
             <div class="hero-content">
@@ -78,66 +154,94 @@
         </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section class="our-story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <div class="section-header">
-                        <span class="section-subtitle">Our Journey</span>
-                        <h2>The Story Behind Elite Design</h2>
-                    </div>
-                    <p class="story-intro">Founded in 2008 by renowned designer Sarah Mitchell, Elite Interior Design Studio began as a small boutique firm with a big vision: to create spaces that don't just look beautiful, but feel like home.</p>
-                    
-                    <div class="story-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-year">2008</div>
-                            <div class="timeline-content">
-                                <h4>The Beginning</h4>
-                                <p>Sarah Mitchell opens Elite Design Studio with a focus on residential interiors in downtown.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2012</div>
-                            <div class="timeline-content">
-                                <h4>Expansion</h4>
-                                <p>Added commercial design services and expanded team to include specialized consultants.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2016</div>
-                            <div class="timeline-content">
-                                <h4>Recognition</h4>
-                                <p>Won our first "Interior Design Firm of the Year" award and opened second location.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2020</div>
-                            <div class="timeline-content">
-                                <h4>Innovation</h4>
-                                <p>Launched virtual design services and sustainable design initiatives.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024</div>
-                            <div class="timeline-content">
-                                <h4>Today</h4>
-                                <p>Leading the industry with 500+ completed projects and expanding internationally.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-image">
-                    <img src="images/about-story.jpg" alt="Our design studio workspace">
-                    <div class="image-badge">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Design is not just what it looks like - design is how it works and how it makes you feel."</p>
-                        <cite>- Sarah Mitchell, Founder</cite>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    <!-- About Intro Section -->
+<section class="about-intro">
+  <div class="container">
+    <div class="intro-content" data-aos="fade-up">
+      <h2>About <span class="highlight">Callista LK</span></h2>
+      <p>
+        At <strong>Callista LK</strong>, we believe that every space has a story to tell.
+        Since our beginning, we’ve been dedicated to crafting furniture and interiors 
+        that harmonize aesthetics, comfort, and purpose. Our designs are guided by a deep 
+        respect for craftsmanship, sustainability, and timeless beauty — creating spaces 
+        where elegance meets everyday life.
+      </p>
+      <p>
+        Whether it’s a cozy living room, a vibrant office, or a luxury villa, our goal 
+        is to turn your vision into a space that inspires, welcomes, and endures.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission Section -->
+<section class="vision-mission">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-subtitle">Our Philosophy</span>
+      <h2>Vision & Mission</h2>
+    </div>
+
+    <div class="vm-grid" data-aos="fade-up">
+      <div class="vm-card">
+        <div class="vm-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>
+          To become Sri Lanka’s leading name in furniture and interior innovation — 
+          creating spaces that reflect sophistication, functionality, and sustainable design.
+        </p>
+      </div>
+
+      <div class="vm-card">
+        <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>
+          To craft modern, high-quality furniture and interiors that enhance the way 
+          people live and work. We merge creativity with craftsmanship, ensuring 
+          every design embodies our core values of quality, comfort, and style.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Offer Section -->
+<section class="offer-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-subtitle">What We Do</span>
+      <h2>What We Offer</h2>
+      <p>From custom creations to full-scale interior projects, Callista LK delivers design excellence across every detail.</p>
+    </div>
+
+    <div class="offer-grid" data-aos="fade-up">
+      <div class="offer-card">
+        <i class="fas fa-couch offer-icon"></i>
+        <h3>Premium Furniture</h3>
+        <p>Modern and classic collections built from top-grade materials, offering durability and elegance that last a lifetime.</p>
+      </div>
+      <div class="offer-card">
+        <i class="fas fa-paint-roller offer-icon"></i>
+        <h3>Custom Design</h3>
+        <p>Tailor-made furniture to match your vision — every color, texture, and shape personalized for your space.</p>
+      </div>
+      <div class="offer-card">
+        <i class="fas fa-ruler-combined offer-icon"></i>
+        <h3>Interior Design Services</h3>
+        <p>Complete space planning and styling, combining function and aesthetics to create cohesive and inspiring interiors.</p>
+      </div>
+      <div class="offer-card">
+        <i class="fas fa-leaf offer-icon"></i>
+        <h3>Sustainable Solutions</h3>
+        <p>Eco-conscious designs using renewable materials and energy-efficient practices to protect our planet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Our Philosophy Section -->
     <section class="philosophy-section">
@@ -284,162 +388,166 @@
             </div>
         </div>
     </section>
+<!-- Why Choose Us Section -->
+<section class="why-choose">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-subtitle">Why Callista LK</span>
+      <h2>Why Choose Us</h2>
+      <p>We combine creativity, craftsmanship, and care to create experiences that go beyond furniture — they define lifestyle.</p>
+    </div>
 
-    <!-- Awards & Recognition Section -->
-    <section class="awards-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Recognition</span>
-                <h2>Awards & Achievements</h2>
-                <p>Our commitment to excellence has been recognized by industry leaders and design publications worldwide.</p>
-            </div>
-            
-            <div class="awards-grid">
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h4>Interior Design Firm of the Year</h4>
-                    <span class="award-year">2023</span>
-                    <p class="award-organization">National Interior Design Association</p>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h4>Excellence in Sustainable Design</h4>
-                    <span class="award-year">2022</span>
-                    <p class="award-organization">Green Building Council</p>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Best Residential Project</h4>
-                    <span class="award-year">2021</span>
-                    <p class="award-organization">Design Excellence Awards</p>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h4>Innovation in Design</h4>
-                    <span class="award-year">2020</span>
-                    <p class="award-organization">Interior Design Magazine</p>
-                </div>
-            </div>
-            
-            <div class="featured-publications">
-                <h3>Featured In</h3>
-                <div class="publications-logos">
-                    <img src="images/logo-architectural-digest.png" alt="Architectural Digest">
-                    <img src="images/logo-house-beautiful.png" alt="House Beautiful">
-                    <img src="images/logo-interior-design.png" alt="Interior Design Magazine">
-                    <img src="images/logo-elle-decor.png" alt="Elle Decor">
-                    <img src="images/logo-homes-gardens.png" alt="Homes & Gardens">
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="why-grid" data-aos="fade-up">
+      <div class="why-card">
+        <i class="fas fa-gem"></i>
+        <h3>Uncompromising Quality</h3>
+        <p>Every piece is made with precision, premium materials, and attention to detail — built to last and impress.</p>
+      </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-text">
-                    <h2>Ready to Start Your Design Journey?</h2>
-                    <p>Let's work together to create a space that reflects your personality and enhances your lifestyle. Our team is ready to bring your vision to life.</p>
-                </div>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-primary">
-                        <i class="fas fa-calendar-alt"></i>
-                        Schedule Consultation
-                    </a>
-                    <a href="portfolio.html" class="btn btn-outline">
-                        <i class="fas fa-images"></i>
-                        View Our Work
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="why-card">
+        <i class="fas fa-handshake"></i>
+        <h3>Client-Focused Approach</h3>
+        <p>We listen, collaborate, and adapt — making sure your ideas guide every stage of design and production.</p>
+      </div>
+
+      <div class="why-card">
+        <i class="fas fa-palette"></i>
+        <h3>Timeless Design</h3>
+        <p>Our designs blend contemporary trends with classic elegance, ensuring beauty that never fades.</p>
+      </div>
+
+      <div class="why-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Conscious Vision</h3>
+        <p>We take pride in using sustainable materials and processes that care for both people and the planet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <i class="fas fa-home"></i>
-                            <span>Elite Design</span>
-                        </a>
-                        <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section fade-in-section">
+                <div class="footer-brand">
+                   
+                    <a href="../index.html" class="brand-logo">
+                        <!-- <i class="fas fa-home"></i> -->
+                          <img src="../assets/cali.jpg" alt="Callista LK">
+                        <span>CALISTALK</span>
+                    </a>
+                    <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                    
+                    <!-- Newsletter Subscription -->
+                    <div class="newsletter-box">
+                        <h5>Subscribe to Our Newsletter</h5>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <span class="btn-text">Subscribe</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="form-message"></div>
+                        </form>
                     </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#residential">Residential Design</a></li>
-                        <li><a href="services.html#commercial">Commercial Design</a></li>
-                        <li><a href="services.html#consultation">Design Consultation</a></li>
-                        <li><a href="services.html#renovation">Renovation Services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Design Street, Creative District, NY 10001</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(555) 123-4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>hello@elitedesign.com</span>
-                        </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon" data-social="facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span class="tooltip">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="pinterest">
+                            <i class="fab fa-pinterest"></i>
+                            <span class="tooltip">Pinterest</span>
+                        </a>
+                        <a href="#" class="social-icon" data-social="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="tooltip">LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Elite Interior Design Studio. All rights reserved.</p>
-                    <div class="footer-links">
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="sitemap.html">Sitemap</a>
+            <div class="footer-section fade-in-section">
+                <h4>Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="marketplace.html"><i class="fas fa-angle-right"></i>Marketplace</a></li>
+                    <li><a href="customize.html"><i class="fas fa-angle-right"></i>Customize Furniture</a></li>
+                    <li><a href="interior.html"><i class="fas fa-angle-right"></i>Interior Design</a></li>
+                    <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Company</h4>
+                <ul class="footer-links-list">
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section fade-in-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Design Street, Creative District, NY 10001</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@elitedesign.com</span>
+                    </div>
+                    <div class="contact-item" data-aos="slide-left">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Animated Background Elements -->
+    <div class="footer-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+
 </body>
 </html>
