@@ -1,0 +1,176 @@
+/* ===== FOOTER PERFORMANCE OPTIMIZATIONS ===== */
+
+/* GPU Acceleration for smooth animations */
+.footer {
+  will-change: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimize fade-in animations */
+.fade-in-section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optimized back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #8b4513, #3d7c47);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Simplified social icon animations */
+.social-icon {
+  transition: transform 0.2s ease, color 0.2s ease;
+  will-change: transform;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Reduce decoration complexity on mobile */
+@media (max-width: 768px) {
+  .decoration-circle {
+    display: none;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Disable complex animations on mobile */
+  .fade-in-section {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  * {
+    animation-duration: 0.1s !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .footer *,
+  .footer *::before,
+  .footer *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .decoration-circle {
+    display: none;
+  }
+}
+
+/* Optimize decoration circles */
+.decoration-circle {
+  will-change: transform;
+  backface-visibility: hidden;
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+/* Lazy loading optimization */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Form optimizations */
+.newsletter-form {
+  will-change: auto;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+  transition: all 0.2s ease;
+}
+
+/* Footer links optimization */
+.footer-links-list a {
+  transition: color 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: var(--primary-color, #8b4513);
+}
+
+/* Contact info optimization */
+.contact-item {
+  transition: background-color 0.2s ease;
+}
+
+.contact-item:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+  border-radius: 5px;
+  padding: 5px;
+  margin: -5px;
+}
+
+/* Footer bottom optimization */
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Error handling for missing images */
+.footer img[src=""] {
+  display: none;
+}
+
+/* Performance boost for scroll animations */
+.footer-section {
+  contain: layout style paint;
+}
+
+/* Optimize typography rendering */
+.footer {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

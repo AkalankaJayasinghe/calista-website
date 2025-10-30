@@ -1,0 +1,66 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B3410;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#8B4513;stop-opacity:0.85" />
+      <stop offset="100%" style="stop-color:#D4A574;stop-opacity:0.8" />
+    </linearGradient>
+    <pattern id="lines" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#grad3)"/>
+  <rect width="1920" height="1080" fill="url(#lines)"/>
+  
+  <!-- Custom furniture workshop elements -->
+  <!-- Workbench -->
+  <g opacity="0.14" transform="translate(1300, 700)">
+    <rect x="0" y="0" width="400" height="40" rx="5" fill="#fff"/>
+    <rect x="20" y="40" width="30" height="150" fill="#fff"/>
+    <rect x="350" y="40" width="30" height="150" fill="#fff"/>
+    <rect x="180" y="40" width="40" height="150" fill="#fff"/>
+  </g>
+  
+  <!-- Tools on wall -->
+  <g opacity="0.12" transform="translate(200, 150)">
+    <!-- Hammer -->
+    <rect x="50" y="100" width="15" height="120" rx="5" fill="#fff"/>
+    <rect x="30" y="80" width="55" height="40" rx="5" fill="#fff"/>
+    
+    <!-- Saw -->
+    <path d="M 150 80 L 250 80 L 250 100 L 160 200 L 150 190 Z" fill="#fff"/>
+    
+    <!-- Ruler -->
+    <rect x="300" y="100" width="200" height="20" fill="#fff"/>
+    <rect x="310" y="100" width="5" height="30" fill="#fff"/>
+    <rect x="330" y="100" width="5" height="30" fill="#fff"/>
+    <rect x="350" y="100" width="5" height="30" fill="#fff"/>
+    <rect x="370" y="100" width="5" height="30" fill="#fff"/>
+    <rect x="390" y="100" width="5" height="30" fill="#fff"/>
+  </g>
+  
+  <!-- Wood planks -->
+  <g opacity="0.1" transform="translate(700, 500)">
+    <rect x="0" y="0" width="400" height="80" rx="5" fill="#fff"/>
+    <rect x="20" y="100" width="400" height="80" rx="5" fill="#fff"/>
+    <rect x="40" y="200" width="400" height="80" rx="5" fill="#fff"/>
+  </g>
+  
+  <!-- Cabinet design sketch -->
+  <g opacity="0.11" transform="translate(100, 600)">
+    <rect x="0" y="0" width="300" height="350" fill="none" stroke="#fff" stroke-width="10" rx="5"/>
+    <rect x="15" y="15" width="130" height="160" fill="none" stroke="#fff" stroke-width="6"/>
+    <rect x="155" y="15" width="130" height="160" fill="none" stroke="#fff" stroke-width="6"/>
+    <rect x="15" y="185" width="270" height="150" fill="none" stroke="#fff" stroke-width="6"/>
+    <circle cx="50" cy="95" r="8" fill="#fff"/>
+    <circle cx="250" cy="95" r="8" fill="#fff"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="1700" cy="200" r="160" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="500" cy="250" r="110" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="1600" cy="900" r="140" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="850" cy="150" r="90" fill="rgba(255,255,255,0.05)"/>
+</svg>

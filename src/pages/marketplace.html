@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Callista LK</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/marketplace.css">
+    <link rel="stylesheet" href="../css/sidebar-filters.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/slideshow-fix.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/cali.jpg" alt="Callista LK">
+                <span class="logo-text">Callista<span class="highlight">LK</span></span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="marketplace.html" class="nav-link active">Marketplace</a></li>
+                    <li><a href="customize.html" class="nav-link">Customize</a></li>
+                    <li><a href="interior.html" class="nav-link">Interior Design</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-icon user-btn" title="User account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" title="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="padding: 120px 0 80px; background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); min-height: 600px; overflow: hidden;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1400px; margin: 0 auto; padding: 0 24px;">
+            <div style="max-width: 600px;">
+                <h1 style="font-size: clamp(2.5rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 24px; color: #111827;">
+                    Transform Your Space<br>with <span style="color: #8b4513;">Callista</span>
+                </h1>
+                <p style="font-size: 18px; color: #6b7280; margin-bottom: 32px; line-height: 1.6;">
+                    Discover premium furniture, customize your perfect pieces, and bring your interior design dreams to life—all in one seamless experience with flexible payment options.
+                </p>
+                <div class="hero-buttons" style="display: flex; gap: 16px; margin-bottom: 48px;">
+                    <a href="#marketplace-section" class="btn btn-primary">
+                        <i class="fas fa-store"></i>
+                        <span>Browse Marketplace</span>
+                    </a>
+                    <a href="interior.html" class="btn btn-outline">
+                        Explore Services
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div style="display: flex; gap: 48px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">500+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Premium Products</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">100+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Custom Designs</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 32px; font-weight: 700; color: #8b4513;">1000+</span>
+                        <span style="font-size: 14px; color: #6b7280;">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="position: relative; max-width: 100%;">
+                <img src="../assets/hero-living-room.jpg" alt="Modern Living Room" style="width: 100%; max-width: 100%; height: 450px; object-fit: cover; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); display: block;">
+                
+                <div style="position: absolute; top: 20px; right: 20px; background: rgba(255, 255, 255, 0.95); color: #3d7c47; padding: 10px 18px; border-radius: 20px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 5; backdrop-filter: blur(10px);">
+                    <i class="fas fa-seedling" style="font-size: 16px; color: #3d7c47;"></i>
+                    Three Services, One Destination
+                </div>
+
+                <div style="position: absolute; bottom: 24px; left: 24px; background: white; padding: 16px 20px; border-radius: 12px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);">
+                    <i class="fas fa-credit-card" style="color: #3d7c47; font-size: 20px;"></i>
+                    <div style="display: flex; flex-direction: column;">
+                        <strong style="font-weight: 600; color: #111827;">Flexible Payments</strong>
+                        <span style="font-size: 14px; color: #6b7280;">Easy installments available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products / Marketplace Section -->
+    <section class="featured-products" id="marketplace-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Furniture <span class="gradient-text">Marketplace</span></h2>
+                <div class="section-nav">
+                    <button class="tab-btn active" data-filter="all">All</button>
+                    <button class="tab-btn" data-filter="tables">Tables</button>
+                    <button class="tab-btn" data-filter="chairs">Chairs</button>
+                    <button class="tab-btn" data-filter="living-room">Living Room</button>
+                    <button class="tab-btn" data-filter="bedroom-sets">Bedroom</button>
+                    <button class="tab-btn" data-filter="custom">Custom</button>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container" style="margin-bottom: 2rem;">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search furniture by name, category, or description...">
+                </div>
+            </div>
+
+            <!-- Main Content Layout with Sidebar Filter -->
+            <div class="marketplace-layout">
+                <!-- Sidebar Filter Section -->
+                <aside class="filter-sidebar">
+                    <div class="filter-header">
+                        <h3 class="filter-title">
+                            <i class="fas fa-filter"></i>
+                            Filters
+                        </h3>
+                        <button class="clear-filters-btn" id="clearAllFilters">
+                            <i class="fas fa-times"></i>
+                            Clear All
+                        </button>
+                    </div>
+
+                    <!-- Results Count -->
+                    <div class="results-info">
+                        <span class="results-count" id="resultsCount">8</span>
+                        <span class="results-text">products found</span>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-group-title">Category</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="all" checked>
+                                <span class="option-text">All Categories</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="living-room">
+                                <span class="option-text">Living Room</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="bedroom-sets">
+                                <span class="option-text">Bedroom</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="tables">
+                                <span class="option-text">Tables</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="chairs">
+                                <span class="option-text">Chairs</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="custom">
+                                <span class="option-text">Custom</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-group-title">Price Range</h4>
+                        <div class="price-filter">
+                            <div class="price-inputs">
+                                <input type="number" id="priceMin" placeholder="Min" value="" min="0" max="300000" step="1000">
+                                <span class="price-separator">to</span>
+                                <input type="number" id="priceMax" placeholder="Max" value="" min="0" max="300000" step="1000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-group-title">Rating</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="all" checked>
+                                <span class="option-text">All Ratings</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="4+">
+                                <span class="option-text">4+ Stars</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="3+">
+                                <span class="option-text">3+ Stars</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Features Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-group-title">Features</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" id="inStock" checked>
+                                <span class="checkbox-mark"></span>
+                                <span class="option-text">In Stock</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" id="customizable">
+                                <span class="checkbox-mark"></span>
+                                <span class="option-text">Customizable</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" id="onSale">
+                                <span class="checkbox-mark"></span>
+                                <span class="option-text">On Sale</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Products Area -->
+                <main class="products-main">
+                    <!-- Sort Controls -->
+                    <div class="sort-controls">
+                        <div class="sort-group">
+                            <label for="sortSelect">Sort by:</label>
+                            <select class="sort-select" id="sortSelect">
+                                <option value="default">Recommended</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Customer Rating</option>
+                                <option value="newest">Newest</option>
+                                <option value="popular">Popular</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="featured-products">
+                        <!-- Product Card 1 -->
+                        <div class="product-card tables" data-aos="fade-up">
+                            <div class="product-badge">Popular</div>
+                            <div class="product-image">
+                                <img src="../assets/sofa.png" alt="Modern Dining Table">
+                                <div class="product-overlay">
+                                    <button class="product-action" title="Add to Wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="product-action" title="Quick View">
+                                        <i class="far fa-eye"></i>
+                                    </button>
+                                    <button class="product-action" title="Add to Cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.2)</span>
+                                </div>
+                                <h3 class="product-title">Modern Dining Table</h3>
+                                <div class="product-price">
+                                    <span class="price-current">Rs. 125,000</span>
+                                    <span class="price-original">Rs. 140,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card chairs" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="../assets/bed.png" alt="Ergonomic Office Chair">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <h3 class="product-title">Ergonomic Office Chair</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 45,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card living-room" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">Featured</div>
+                    <div class="product-image">
+                        <img src="../assets/funi (1).jpeg" alt="Luxury Sofa Set">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <h3 class="product-title">Luxury Sofa Set</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 185,000</span>
+                            <span class="price-original">Rs. 210,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card bedroom-sets" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">Customizable</div>
+                    <div class="product-image">
+                        <img src="../assets/funi (2).jpeg" alt="Complete Bedroom Set">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.3)</span>
+                        </div>
+                        <h3 class="product-title">Complete Bedroom Set</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 275,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card tables" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="../assets/sofa.png" alt="Coffee Table">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <h3 class="product-title">Designer Coffee Table</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 65,000</span>
+                            <span class="price-original">Rs. 75,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card chairs" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-badge">Trending</div>
+                    <div class="product-image">
+                        <img src="../assets/bed.png" alt="Dining Chairs Set">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.1)</span>
+                        </div>
+                        <h3 class="product-title">Dining Chairs Set (4)</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 95,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card custom" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-badge">Custom</div>
+                    <div class="product-image">
+                        <img src="../assets/funi (1).jpeg" alt="Custom Wardrobe">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <h3 class="product-title">Custom Built Wardrobe</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 195,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card living-room" data-aos="fade-up" data-aos-delay="700">
+                    <div class="product-badge">Sale</div>
+                    <div class="product-image">
+                        <img src="../assets/funi (2).jpeg" alt="Entertainment Unit">
+                        <div class="product-overlay">
+                            <button class="product-action" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="product-action" title="Quick View">
+                                <i class="far fa-eye"></i>
+                            </button>
+                            <button class="product-action" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.4)</span>
+                        </div>
+                        <h3 class="product-title">Modern Entertainment Unit</h3>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 155,000</span>
+                            <span class="price-original">Rs. 185,000</span>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    
+                    <!-- No Results Message -->
+                    <div class="no-results" id="no-results">
+                        <i class="fas fa-search-minus"></i>
+                        <h3>No products found</h3>
+                        <p>Try adjusting your filters or search terms to find what you're looking for</p>
+                        <button class="btn btn-primary" onclick="document.querySelector('.smart-filter-system')?.resetAllFilters?.()">
+                            <i class="fas fa-redo"></i> Reset All Filters
+                        </button>
+                    </div>
+                </main>
+            </div>
+            
+            <div class="section-footer" data-aos="fade-up" style="margin-top: 3rem;">
+                <a href="collection.html" class="btn btn-primary">
+                    View All Products <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-showcase" id="featured-showcase">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="featured-header" data-aos="fade-up">
+                <div class="header-content">
+                    <span class="section-label">Featured Collection</span>
+                    <h2 class="section-title">
+                        Handpicked <span class="gradient-text">Premium</span> Pieces
+                    </h2>
+                    <p class="section-description">
+                        Discover our carefully curated selection of exceptional furniture pieces that blend 
+                        timeless design with contemporary functionality
+                    </p>
+                </div>
+            </div>
+
+            <!-- Image Slideshow -->
+            <div class="slideshow-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <div class="slideshow-wrapper" style="position: relative; width: 100%; height: 600px; overflow: hidden;">
+                    <!-- Navigation Buttons -->
+                    <button class="nav-btn prev-btn" id="featuredPrev" aria-label="Previous slide" style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10; width: 50px; height: 50px; background: rgba(255, 255, 255, 0.9); border: 2px solid rgba(139, 69, 19, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" id="featuredNext" aria-label="Next slide" style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10; width: 50px; height: 50px; background: rgba(255, 255, 255, 0.9); border: 2px solid rgba(139, 69, 19, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="slides-track" id="slidesTrack" style="position: relative; width: 100%; height: 100%;">
+                        <div class="slide active" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; visibility: visible; z-index: 2;">
+                            <img src="../assets/funi (1).jpeg" alt="Luxury Living Room Set" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; z-index: 1;">
+                            <img src="../assets/funi (2).jpeg" alt="Designer Office Chair" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; z-index: 1;">
+                            <img src="../assets/sofa.png" alt="Modern Dining Set" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; z-index: 1;">
+                            <img src="../assets/bed.png" alt="Storage Ottoman" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; z-index: 1;">
+                            <img src="../assets/hero-living-room.jpg" alt="Modern Living Room" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                    </div>
+                    
+                    <!-- Slide Dots -->
+                    <div class="slide-dots" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 10;">
+                        <span class="dot active" data-slide="0" style="width: 12px; height: 12px; border-radius: 50%; background: white; cursor: pointer; box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.5);"></span>
+                        <span class="dot" data-slide="1" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); cursor: pointer;"></span>
+                        <span class="dot" data-slide="2" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); cursor: pointer;"></span>
+                        <span class="dot" data-slide="3" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); cursor: pointer;"></span>
+                        <span class="dot" data-slide="4" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); cursor: pointer;"></span>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        <!-- Background Decoration -->
+        <div class="section-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section fade-in-section">
+                    <div class="footer-brand">
+                        <a href="../index.html" class="brand-logo">
+                            <img src="../assets/cali.jpg" alt="Callista LK">
+                            <span>CALISTALK</span>
+                        </a>
+                        <p>Creating extraordinary spaces that inspire and delight. Your vision, our expertise, exceptional results.</p>
+                        
+                        <!-- Newsletter Subscription -->
+                        <div class="newsletter-box">
+                            <h5>Subscribe to Our Newsletter</h5>
+                            <form id="newsletterForm" class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                    <button type="submit" class="subscribe-btn">
+                                        <span class="btn-text">Subscribe</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                                <div class="form-message"></div>
+                            </form>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-icon" data-social="facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span class="tooltip">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="pinterest">
+                                <i class="fab fa-pinterest"></i>
+                                <span class="tooltip">Pinterest</span>
+                            </a>
+                            <a href="#" class="social-icon" data-social="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section fade-in-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="marketplace.html"><i class="fas fa-angle-right"></i>Marketplace</a></li>
+                        <li><a href="customize.html"><i class="fas fa-angle-right"></i>Customize Furniture</a></li>
+                        <li><a href="interior.html"><i class="fas fa-angle-right"></i>Interior Design</a></li>
+                        <li><a href="services.html#renovation"><i class="fas fa-angle-right"></i>Renovation Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section fade-in-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-angle-right"></i>Portfolio</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a></li>
+                        <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section fade-in-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Design Street, Creative District, NY 10001</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@elitedesign.com</span>
+                        </div>
+                        <div class="contact-item" data-aos="slide-left">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; <span id="currentYear"></span> Elite Interior Design Studio. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!-- Animated Background Elements -->
+        <div class="footer-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/marketplace.js"></script>
+    <script src="../js/sidebar-filters.js"></script>
+    <script src="../js/slideshow-fix.js"></script>
+</body>
+</html>

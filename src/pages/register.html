@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Callista LK</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-body">
+    <!-- Back Button -->
+    <a href="../index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="auth-container">
+        <!-- Left Side - Image/Brand -->
+        <div class="auth-left">
+            <div class="auth-brand">
+                <img src="../assets/cali.jpg" alt="Callista LK">
+                <h1>Callista<span>LK</span></h1>
+            </div>
+            <div class="auth-content">
+                <h2>Join Callista LK</h2>
+                <p>Create your account and start your journey to a beautifully furnished home.</p>
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Access exclusive collections</li>
+                    <li><i class="fas fa-check-circle"></i> Get personalized recommendations</li>
+                    <li><i class="fas fa-check-circle"></i> Enjoy member-only benefits</li>
+                    <li><i class="fas fa-check-circle"></i> Free design consultation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Side - Register Form -->
+        <div class="auth-right">
+            <div class="auth-form-container">
+                <div class="auth-header">
+                    <h2>Create Account</h2>
+                    <p>Fill in your details to get started</p>
+                </div>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i> Sign up with Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Register Form -->
+                <form class="auth-form" id="registerForm">
+                    <div class="form-row-group">
+                        <div class="form-group">
+                            <label for="firstName">
+                                <i class="fas fa-user"></i> First Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                placeholder="John"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">
+                                <i class="fas fa-user"></i> Last Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lastName" 
+                                placeholder="Doe"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">
+                            <i class="fas fa-envelope"></i> Email Address
+                        </label>
+                        <input 
+                            type="email" 
+                            id="registerEmail" 
+                            name="email" 
+                            placeholder="your.email@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> Phone Number
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+94 XX XXX XXXX"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">
+                            <i class="fas fa-lock"></i> Password
+                        </label>
+                        <div class="password-input-group">
+                            <input 
+                                type="password" 
+                                id="registerPassword" 
+                                name="password" 
+                                placeholder="Create a strong password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            <i class="fas fa-lock"></i> Confirm Password
+                        </label>
+                        <div class="password-input-group">
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="confirmPassword" 
+                                placeholder="Re-enter your password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <span>Send me exclusive offers and updates</span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

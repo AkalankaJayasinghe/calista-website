@@ -1,0 +1,147 @@
+/* EMERGENCY SLIDESHOW CSS FIX - FORCE OVERRIDE */
+/* Add this to fix slideshow display issues */
+
+/* Force override any existing styles */
+.featured-showcase .slideshow-container {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  background: white !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.featured-showcase .slideshow-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  height: 600px !important;
+  overflow: hidden !important;
+}
+
+.featured-showcase .slides-track {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.featured-showcase .slide {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.5s ease-in-out !important;
+  z-index: 1 !important;
+}
+
+.featured-showcase .slide.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
+}
+
+.featured-showcase .slide img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Navigation buttons positioned on slideshow */
+.featured-showcase .slideshow-wrapper .nav-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  width: 50px !important;
+  height: 50px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid rgba(139, 69, 19, 0.2) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.featured-showcase .slideshow-wrapper .nav-btn:hover {
+  background: #8b4513 !important;
+  color: white !important;
+  border-color: #8b4513 !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+.featured-showcase .slideshow-wrapper .prev-btn {
+  left: 20px !important;
+}
+
+.featured-showcase .slideshow-wrapper .next-btn {
+  right: 20px !important;
+}
+
+/* Slide dots */
+.featured-showcase .slide-dots {
+  position: absolute !important;
+  bottom: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  gap: 12px !important;
+  z-index: 10 !important;
+}
+
+.featured-showcase .dot {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.featured-showcase .dot:hover {
+  background: rgba(255, 255, 255, 0.8) !important;
+  transform: scale(1.2) !important;
+}
+
+.featured-showcase .dot.active {
+  background: white !important;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.5) !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .featured-showcase .slideshow-wrapper {
+    height: 400px !important;
+  }
+
+  .featured-showcase .slideshow-wrapper .nav-btn {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .featured-showcase .slideshow-wrapper .prev-btn {
+    left: 10px !important;
+  }
+
+  .featured-showcase .slideshow-wrapper .next-btn {
+    right: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-showcase .slideshow-wrapper {
+    height: 300px !important;
+  }
+
+  .featured-showcase .slideshow-container {
+    border-radius: 15px !important;
+  }
+}
